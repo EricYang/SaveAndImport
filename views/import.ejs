@@ -1,0 +1,23 @@
+<html>
+<head></head>
+<body>
+<img src="/import2.jpeg" style="width:200px; height:200px;">
+<h3 style="color:red"> upload package <%= Name %> <%= Message %> </h3>
+<p>
+Please enter your name and password then press button "Import":<br>
+<form action="http://localhost/import"
+enctype="multipart/form-data" method="post">
+<p>
+name: <input type="text" name="username" size="30" value="">
+</p>
+<p>
+password :<input type="password" name="password" size="40" value="">
+</p>
+<input type="text" name="filename" size="40" style="display:none" value="<%= FileName %>">
+<div>
+<input type="submit" value="Import">
+</div>
+</form>
+
+</body>
+</html>
